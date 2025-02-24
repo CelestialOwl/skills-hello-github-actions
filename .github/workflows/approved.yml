@@ -1,0 +1,19 @@
+
+name: Approved Label to the PR.
+
+on:
+  pull_request:
+    types: ["opened"]
+permissions:
+  pull-requests: "write"
+jobs:
+  build:
+    name: Add Label
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: gh pr edit "$PR_URL" --add-label "$LABELS"
+        env:
+          LABELS: "approved"
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
