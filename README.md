@@ -4,6 +4,8 @@
 
 _Create and run a GitHub Actions workflow._
 
+[![Approved Label to the PR.](https://github.com/CelestialOwl/skills-hello-github-actions/actions/workflows/approved.yml/badge.svg)](https://github.com/CelestialOwl/skills-hello-github-actions/actions/workflows/approved.yml)
+
 </header>
 
 ## Finish
